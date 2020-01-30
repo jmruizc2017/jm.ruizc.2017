@@ -9,9 +9,12 @@ print(lines)
 lines.split(',')
 
 file = "/etc/passwd"
->>> lines = file_object.readlines()
->>> file = "/etc/passwd"
->>> file_object = open(file, 'r')
->>> lines = file_object.read()
->>> print(lines)
+file_object = open(file, 'r')
+lines = file_object.read()
+print(lines)
+line = lines.split(':')
+print(line)
+n = 0
+i = 5
 
+li = line[]
