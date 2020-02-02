@@ -1,20 +1,10 @@
 
-
 #!/usr/bin/python3
 
 file = "/etc/passwd"
 file_object = open(file, 'r')
-lines = file_object.readlines()
-print(lines)
-lines.split(',')
-
-file = "/etc/passwd"
-file_object = open(file, 'r')
-lines = file_object.read()
-print(lines)
-line = lines.split(':')
-print(line)
-n = 0
-i = 5
-
-li = line[]
+lines = file_object.readline()
+while len(lines) != 0:
+    line = lines.split(':')
+    print('Usuario:', line[0], '| Shell:', line[-1])
+    lines = file_object.readline()
